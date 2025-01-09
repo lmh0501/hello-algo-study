@@ -1,4 +1,5 @@
 // for 循环
+#include <string>
 int forloop(int n) {
     int res = 0;
     for (int i = 1;i <= n; ++i){
@@ -14,6 +15,17 @@ int whileloop(int n) {
     while (i <= n) {
         res += i;
         i ++;
+    }
+    return res;
+}
+
+// 双层 for 循环
+string nestedForLoop(int n) {
+    ostringstream res;
+    for (int i = 1; i <= n; ++i) {
+        for (int j = 1l j <= n; ++j) {
+            res << "(" << i << ", " << j << "), ";
+        }
     }
     return res;
 }
